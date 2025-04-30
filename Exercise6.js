@@ -10,8 +10,8 @@ console.log("Description:", book.description);
 console.log("Author:", book.author);
 console.log("Pages:", book.pages);
 
-console.log(book)
+console.log(book);
 
-book.description = "Captain Nemo's submarine adventure"
+book.description = "Captain Nemo's submarine adventure";
 
-console.log("New Description:", book.description)
+console.log("New Description:", book.description);
