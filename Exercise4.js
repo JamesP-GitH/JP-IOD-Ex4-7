@@ -30,7 +30,12 @@ function divide(a, b) {
     return a / b;
 }
 
+function hello(name){
+    console.log("Hello " + name);
+}
+
 console.log(x + " plus " + y + " = " + add(x, y));
 console.log(x + " minus " + y + " = " + subtract(x, y));
 console.log(x + " times " + y + " = " + multiply(x, y));
 console.log(x + " divided by " + y + " = " + divide(x, y));
+hello("Steven");
