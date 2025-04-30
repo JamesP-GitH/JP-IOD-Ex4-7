@@ -23,10 +23,100 @@ function add(a, b) {
     return a + b;
 }
 
+// Test 1. Adding
+function testAdd() {
+    const result = add(2, 3);
+    if (result !== 5) {
+        throw new Error("Test Failed: Expected add(2, 3) to be 5, but got " + result);
+    } else {
+        console.log("Test Passed: add(2, 3) === 5");
+    }
+}
+
+// Test 2. Adding Zero
+function testAddZero() {
+    const result = add(0, 0);
+    if (result !== 0) {
+        throw new Error("Test Failed: Expected add(0, 0) to be 0, but got " + result);
+    } else {
+        console.log("Test Passed: add(0, 0) === 0");
+    }
+}
+
+// Test 3. Adding Negatives
+function testAddNegative() {
+    const result = add(-2, 3);
+    if (result !== 1) {
+        throw new Error("Test Failed: Expected add(-2, 3) to be 1, but got " + result);
+    } else {
+        console.log("Test Passed: add(-2, 3) === 1");
+    }
+}
+
+// Test 4. Adding Decimals
+function testAddDecimal() {
+    const result = add(5.8, 0.4);
+    if (result !== 6.2) {
+        throw new Error("Test Failed: Expected add(5.8, 0.4) to be 6.2, but got " + result);
+    } else {
+        console.log("Test Passed: add(5.8, 0.4) === 6.2");
+    }
+}
+
+testAdd();
+testAddZero();
+testAddNegative();
+testAddDecimal();
+
 // Subtracts second number from the first number and returns output
 function subtract(a, b) {
     return a - b;
 }
+
+// Test 1. Subtract Positive
+function testSub() {
+    const result = subtract(5, 3);
+    if (result !== 2) {
+        throw new Error("Test Failed: Expected subtract(5, 3) to be 5, but got " + result);
+    } else {
+        console.log("Test Passed: subtract(5, 3) === 2");
+    }
+}
+
+// Test 2. Subtract Zero
+function testSubZero() {
+    const result = subtract(0, 0);
+    if (result !== 0) {
+        throw new Error("Test Failed: Expected subtract(0, 0) to be 0, but got " + result);
+    } else {
+        console.log("Test Passed: subtract(0, 0) === 0");
+    }
+}
+
+// Test 3. Subtracting Negative
+function testSubNegative() {
+    const result = subtract(-5, -3);
+    if (result !== -2) {
+        console.log("Test Failed: Expected -2, got " + result);
+    } else {
+        console.log("Test Passed: subtract(-5, -3) === -2");
+    }
+}
+
+// Test 4. Subtracting Decimals
+function testSubDecimals() {
+    const result = subtract(5.5, 2.2);
+    if (result !== 3.3) {
+        console.log("Test Failed: Expected 3.3, got " + result);
+    } else {
+        console.log("Test Passed: subtract(5.5, 2.2) === 3.3");
+    }
+}
+
+testSub();
+testSubZero();
+testSubNegative();
+testSubDecimals();
 
 // Multiplies two numbers together and returns output
 function multiply(a, b) {
