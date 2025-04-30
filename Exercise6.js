@@ -1,4 +1,4 @@
-{
+let Book = {
     "title": "Twenty Thousand Leagues Under the Sea",
     "description": "Submarine Adventure",
     "author": "Jules Verne",
