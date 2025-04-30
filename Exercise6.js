@@ -1,9 +1,9 @@
 let book = {
-    "title": "Twenty Thousand Leagues Under the Sea",
-    "description": "Submarine Adventure",
-    "author": "Jules Verne",
-    "pages": "287"
-}
+  title: "Twenty Thousand Leagues Under the Sea",
+  description: "Submarine Adventure",
+  author: "Jules Verne",
+  pages: "287",
+};
 
 console.log("Title:", book.title);
 console.log("Description:", book.description);
