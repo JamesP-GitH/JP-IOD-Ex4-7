@@ -1,11 +1,5 @@
 let books = [
   {
-    title: "Twenty Thousand Leagues Under the Sea",
-    description: "Submarine Adventure.",
-    author: "Jules Verne",
-    pages: 287,
-  },
-  {
     title: "Moby Dick",
     description: "A whaling voyage and revenge.",
     author: "Herman Melville",
@@ -16,6 +10,12 @@ let books = [
     description: "Dystopian future society.",
     author: "George Orwell",
     pages: 328,
+  },  
+  {
+    title: "Twenty Thousand Leagues Under the Sea",
+    description: "Submarine Adventure.",
+    author: "Jules Verne",
+    pages: 287,
   },
   {
     title: "The Great Gatsby",
@@ -30,3 +30,6 @@ let books = [
     pages: 279,
   },
 ];
+
+books[2].description = "Captain Nemo's submarine adventure";
+console.log(books);
