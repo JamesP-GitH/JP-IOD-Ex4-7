@@ -1,7 +1,7 @@
 const args = process.argv.slice(2);
 
 if (args.length < 2) {
-    console.log("Please provide two numbers as arguments. Example: node script.js 10 5");
+    console.log("Please input two numbers as arguments. Eg: node script.js 10 5");
     process.exit(1);
 }
 
@@ -24,6 +24,9 @@ function multiply(a, b) {
 }
 
 function divide(a, b) {
+    if (b === 0) {
+        return "Cannot divide by zero";
+    }
     return a / b;
 }
 
